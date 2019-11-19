@@ -12,7 +12,7 @@ public class menuak {
 				+ "0- gehiketa\n"
 				+ "1- kenketa\n"
 				+ "3- biderketa\n"
-				+ "4- zatiketa\n");
+				+ "4- faktorial");
 		
 		aukera = Integer.parseInt(scan.nextLine());
 		
@@ -27,6 +27,20 @@ public class menuak {
 			System.out.println("Biderketa aukeratu duzu");
 			break;
 		case 4:
+			System.out.println("Faktoriala aukeratu duzu");
+			
+			int num;
+		    int factorial = 1;
+		    
+		    System.out.println("Sar ezazu zenbaki bat: ");
+		    num = scan.nextInt();
+		    for (int i=2; i<=num; i++){
+		        factorial = factorial * i;
+		    }
+
+		    System.out.println("Factorial: " + factorial);
+			break;
+		case 5: 
 			System.out.println("Zatiketa aukeratu duzu");
 			break;
 		
